@@ -14,6 +14,6 @@ A simple alarm clock that lets the user set alarms and delete them. All the alar
 - [CSS](https://en.wikipedia.org/wiki/CSS)
 - Vanilla [Javascript](https://www.javascript.com/)
 
-### SITE PREVIEW
+### Site Preview
 
 https://sahil6699.github.io/alarm-clock-project/
