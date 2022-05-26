@@ -2,12 +2,6 @@
 
 A simple alarm clock that lets the user set alarms and delete them. All the alarms are shown in a list.
 
-## App Interface
-
-![Alarm Clock](assets/homepage.jpg)
-
-![Alarm List](assets/alarm_clock.png)
-
 ## Features
 
 - Clock with current time
