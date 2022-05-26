@@ -10,9 +10,9 @@ var time = document.getElementById("clock-time");
 var audio = new Audio("./audio.wav");
 
 // NOTIFICATION MESSAGE
-const AddMessage = "Alram is already set at this time";
+const AddMessage = "Alarm is already set at this time";
 
-// ALRAM ARRAY FOR STORING ALL ALRAMS
+// ALARM ARRAY FOR STORING ALL ALARMS
 alramArray=[];
 
 // FUNCTION CALCULATE THE CURRENT TIME AND SET THE CONTENT INSIDE THE HEADING TAG IN EVERY SECONDS
@@ -36,7 +36,7 @@ function alertMessage(msg) {
   }, 2500);
 }
 
-// SET ALRAM CLICK EVENT LISTENER FUNCTION AND CREATE A LI TAG
+// SET ALARM CLICK EVENT LISTENER FUNCTION AND CREATE A LI TAG
 btn.addEventListener('click',function(){
     alarmtime = hrs.value + ":" + mins.value + ":" + secs.value+" "+AmPm.value;
 
@@ -52,7 +52,7 @@ btn.addEventListener('click',function(){
     document.getElementsByClassName("alrm-list")[0].appendChild(liTag);
 })
 
-// STOP ALRAM AND DELETE ALRAM CLICK EVENT LISTENER
+// STOP ALARM AND DELETE ALARM CLICK EVENT LISTENER
 document.addEventListener("click", function (event) {
 
     clickedId = event.target.id;
@@ -97,7 +97,7 @@ function addZero(number)
     return number;
 }
 
-// DYANMICALLY CREATE A OPTIONS FOR HOURS,MINUTES,SECONDS
+// DYNAMICALLY CREATE A OPTIONS FOR HOURS,MINUTES,SECONDS
 function CreateOptions(selector,min,max){
     for(let i=min;i<max;i++)
     {
