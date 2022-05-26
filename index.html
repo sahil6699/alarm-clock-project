@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">  
+    <title>Alram Clock</title>
+</head>
+<body>
+    <!-- NOTIFICATION ALERT -->
+    <div id='alert'></div>
+    <!-- CURRENT TIME ON LOAD -->
+    <div id='clock'>
+        <h1 id='clock-time'></h1>
+    </div>
+    <!-- DETAIL-CONTAINER FOR TIME INPUT FOR SET ALRAM-->
+    <div id="container">
+        <!-- FOR HOURS OPTIONS -->
+        <div>
+             <label for="hrs-optns">Hours</label>
+            <select id="hrs-optns">   
+                <!-- DYANMICALLY ADD OPTIONS THROUGH JS -->
+            </select>
+        </div>
+          <!-- FOR MINUTES OPTIONS --> 
+        <div>
+            <label for="min-optns">Minutes</label>
+            <select id="min-optns">  
+                 <!-- DYANMICALLY ADD OPTIONS THROUGH JS -->
+            </select>
+        </div>
+          <!-- FOR SECONDS OPTIONS -->  
+        <div>
+            <label for="secnds-optns">Seconds</label>
+            <select id="secnds-optns">
+                 <!-- DYANMICALLY ADD OPTIONS THROUGH JS -->
+            </select>
+        </div>
+        <!-- FOR AM/PM OPTIONS -->
+        <div>
+            <label for="AM/PM">AM/PM</label>
+            <select id="AM/PM">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+			</select>
+        </div>
+        <!-- BUTTON FOR SET ALRAM -->
+        <div>
+            <button id="set-alrm">Set Alram</button>
+        </div>
+    </div>
+    <!-- LIST OF UPCOMING ALRAM -->
+    <div id='list-ctn'>
+        <ul class='alrm-list'>
+             <!-- DYANMICALLY ADD ALRAM WITH DELETE AND STOP BUTTON THROUGH JS -->
+            
+        </ul>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
